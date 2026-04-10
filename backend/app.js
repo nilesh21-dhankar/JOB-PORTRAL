@@ -17,7 +17,7 @@ app.get ("/", (req, res)=> {
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://job-portral-three.vercel.app",
     method: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
   })
